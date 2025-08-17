@@ -386,7 +386,7 @@ def plot_to_base64(max_bytes=100000):
 llm = ChatGoogleGenerativeAI(
     model=os.getenv("GOOGLE_MODEL", "gemini-2.5-pro"),
     temperature=0,
-    google_api_key=os.getenv("GOOGLE_API_KEY")
+    google_api_key=os.getenv("GOOGLE_API_KEY", ""),
 )
 
 # Tools list for agent (LangChain tool decorator returns metadata for the LLM)
