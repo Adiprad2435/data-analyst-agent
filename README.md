@@ -1,1 +1,1 @@
-deployed on railway used langchain gemini  
+Deployed on Render using Gemini
